@@ -1,0 +1,36 @@
+1-Indexer is a array of properties
+In Indexer-
+first remove all the private varible and declare a private arr type  varieble
+
+indexer is refer by this keyword
+
+with the help of indexer also we are setting and getting the data in private varible
+but the only difference is that in indexer we declaring only a single array varible
+of type object so that it can store all the values like int,char,string etc.
+
+class Person{
+   object []mydata=new object[3];
+   public object this[int i]
+   {
+     get{return mydata[i];}
+     set{mydata[i]=value;}
+    }
+}
+
+class Main{
+   Person obj=new Person();  //here obj=this 
+
+    obj[0]="Mannu Negi";
+    obj[1]=1;
+    obj[2]="MCA";
+
+    Console.WriteLine(obj[0]+" "+obj[1]+" "+obj[2]);
+
+}
+
+
+**************************************************************************
+Note - actually i want make such an application in which ,I dont want to expose 
+the  internal mechanism .but we can access those things by some operational things
+thats called  encapsulation.
+

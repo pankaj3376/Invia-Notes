@@ -1,0 +1,67 @@
+
+
+ About static constructor
+
+there is no need for of new keyword for calling static constructor
+static constructor is so special even though it runs before main function
+we can not override static constructore
+driver detection and memory detection can be done with the help of static constructor
+
+---------------------------------------------------------------------
+static readonly varieble
+
+we can initialize the readonly static varieble with the static constructor only
+------------------------------------------------------------------
+Basic topic 
+
+dynamic , var, private ,public ,protected ,internal
+
+---------------------------------------------------------
+important topic
+
+ what is properties 
+ what is indexer
+ what is collections 
+ what is generic 
+ what is inheritance 
+ what is interface 
+ what is abstract class
+ what is runtime polymorphism difference between static polymorphism and runtime polymorphism
+------------------------------------------------------------------------
+About var keyword
+
+1-
+'var' is keyword used for aliasing for a class name
+so for creating an object
+ 
+var obj= new PersonDeatils();
+basically we use 'var' keyword when the class name is very lengthy .so to do fast coding we use  'var' in place class name
+In class name we can use 'var' keyword at the left side only 
+
+2-
+2nd use of 'var' keyword 
+we can not declare the 'var' at the class scope
+
+3-
+we can declare the 'var' at any function or methods
+
+4-
+you can not use 'var' in the parameter of any function 
+
+5- 
+once we have declare  the type  of 'var'.then we can not change the type of 'var'
+
+eg-
+var name="manoj";
+name=12;  //here it will show an error because we have decleared the var is of type string and now we declearing it as an int
+ 
+
+var name="Manoj Singh Negi";
+
+so here 'var' will convert into string becoz at the right side a string is initialized
+so 'var' can also used for aliasing for datatype . 
+
+
+-------------------------------------------------------------------
+
+dynamic is just opposite of var.

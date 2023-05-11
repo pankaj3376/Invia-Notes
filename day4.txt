@@ -1,0 +1,110 @@
+
+creating new directory for writing a code
+
+1-md day4
+2-cd day4
+3-dotnet new console --name day4session
+4-cd day4session
+*****************************************************************
+using is a keyword to import the namespaces
+
+using system;
+ 
+class Person{
+internal int Id;
+internal String name;
+
+}
+
+class PersonDeatils{
+ 
+   public void personInfo()
+   {
+     Person p=new Person();
+     p.Id=10;
+     p.name="manoj";
+    }
+}
+
+class startup
+{
+   public static void main()
+   {
+      var pdetails=new PersonDetails();
+      pdeatils.personInfo();
+    }
+}
+
+conclusion-- this program will execute but the access of varible will be global.and which is not following security.
+
+
+
+scope of private varieble is with in the class.
+but the scope of internal is with in other classes also but inside the namespace
+public have access outside the namespace
+*******************************************************
+note-
+
+In any situation the varieble of the class can not directly access by any object.if this will happen ,then the data hiding is will lost 
+
+so whenever we create a class and the varieble we declare inside that class 
+then those varieble are by default private .
+if we want to access those varieble in some other class then we can not access
+because of the private keyword.if we will use public and private in place of private then those 
+varible have access in other classes also
+if we want to limit that access to a perticular place then we use "properties".
+
+*****************************************************
+what is properties
+properties is mechanism to access private varieble of a class
+to access the private varieble of a class ,we have to apply get and set accesor
+there are actually 2 ways to access the private varieble of a class
+
+1-Properties
+2-function or methods
+
+note-'value' is keyword act as a temporary varieble .and is used to assign the value of set method of properties 
+
+class Person{
+ int Id;
+ String name;
+
+ public int PId
+ {
+   get
+   {
+     return Id;
+    }
+   set{  
+        Id=value;
+      } 
+  }
+
+  public string PName{
+
+   get
+   {
+    return name;
+    }
+    set
+    {
+     name=value;
+     }
+
+   }
+
+}
+//class having main method
+
+class startup
+{
+   Person p= new Person();
+   p.PName="Mannu";
+   p.PId=10;
+   
+    Console.WriteLine(p.PId);
+    Console.WriteLine(p.PName);
+}
+
+
+

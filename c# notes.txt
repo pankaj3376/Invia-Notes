@@ -1,0 +1,37 @@
+Introduction to c#
+compilation phase
+execution phase
+what is assembly
+types of assembly
+difference between exe and dll
+what is managed code and unmanaged code
+what is clr
+what are the content of assembly
+manifest
+metadeta 
+.IL
+Resourses
+
+c# is language to develop window app.distributed application,developing web based application.
+
+on compilation phase 
+first you will make file or source code having the extension of cs then we will compile that file and it will generate a exe and dll file
+
+assembly -it is compiled file in the form of exe and dll.
+
+if there is main function inside  a program then a exe file will be created 
+if there is not any main function in a program then a dll file will be created 
+we make dll for reusability
+
+
+function in c#
+constructor
+parameterised methods ,methods return type other then the void
+
+object is a mechanism by which we can access the methods varible written inside the class.
+
+static function 
+member function
+
+
+

@@ -1,0 +1,43 @@
+intance varieble
+
+1-these varieble are also known as member function
+2-Instance varieble can access by object
+3-there are several ways we can set a value for instance varieble
+
+
+Multiple ways to set the data for instance varieble
+
+1-member function 
+2-constructor
+3-properties
+4-object.varieble
+
+Instance read only varieble
+
+1-instance read only varieble is also known as object level varieble but we can set the value only by constructor
+(no object ,no properties,no function)
+
+
+static varieble
+
+1-static varible is known as class level varible.it is just opposite to object or intance varieble or instance read only varieble
+2-static varieble is also known as global varieble.if data is common for all the object or belonging.
+
+there are multiple ways we can assingn the data for the static varieble.
+1-static constructor
+2-static function
+3-static properties
+class name . varieble
+
+static read only varible
+
+1-static read olny varieble are similar to static varieble
+2-definetely we can access by class name
+3-static read only varieble can only be initialised by staic constructor
+
+constant varieble
+
+1-constant varieble is also similar to static varieble because we can access by class name
+2- constant varible enforce at the point of declearation initialisation is must
+   (it means to initialize constant varieble we dont need static contructor,no function)
+ 
