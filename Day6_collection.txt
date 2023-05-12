@@ -1,0 +1,64 @@
+class Employee
+{
+    public int EmpID{get;set;}
+    public string EmpName{get;set;}
+    public int Eage{get;set;}
+}
+
+class HR
+{
+   public Employee EmplyeeDetails()
+    {
+        Employee obj=new Employee();
+        obj.EmpID=101;
+        obj.EmpName="deepa";
+        obj.Eage=21;
+        return obj;
+       }
+}
+
+class Director
+{
+    public static void Main()
+    {
+        HR objHR=new HR();
+       Employee temp=objHR.EmplyeeDetails();
+       
+       Console.WriteLine( temp.EmpID+" "+temp.EmpName+" "+temp.Eage);
+    }
+}
+
+
+
+
+------------------------------------------------------
+
+using System;
+using 
+
+class Employee
+{
+    public int Id { get; set; }
+    public string? EmpName { get; set; }
+    public int? Eage { get; set;}
+}
+class HR
+{
+    public Employee EmployeeDetails()
+    {
+        Employee obj = new Employee();
+        obj.Id = 1;
+        obj.EmpName = "Panakj";
+        obj.Eage = 10;
+	return obj;  
+    }
+}
+class Director
+{
+    public static void Main(string[] args)
+    {
+        HR hr = new HR();
+        Employee temp = hr.EmployeeDetails();
+        Console.WriteLine(temp.Id+" "+temp.EmpName+" "+temp.Eage);
+    }
+}
