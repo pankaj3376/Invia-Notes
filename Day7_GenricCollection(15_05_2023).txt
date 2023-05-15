@@ -1,0 +1,166 @@
+                                          
+___________________________________________________ DAY_7 (15_05_2023) ______________________________________________________________
+
+ Day_7 Topic Coverd:
+
+ 1. Boxing & Unoxing
+ 2. Collection Genric
+ 3. Genric Class
+ 4. Genric function()
+ 5. Assignment: Perform CRUD,Search operation on Genric Collection.
+
+
+
+-----------------------------   Collection.Genric  ---------------------------------------
+
+
+using System;
+using System.Collections;
+
+class peronDetails
+{
+    ArrayList obj = new ArrayList();
+    public void Entry()
+    {
+        obj.Add("Pankaj");
+        obj.Add(900);                                       //------ Boxing
+
+        int salary = Convert.ToInt32(obj[1]);              // ------Unboxing
+        string name = Convert.ToString(obj[0]);
+
+        Console.WriteLine("Name: "+name+"\nSalary: "+salary);
+    }
+}
+
+class result
+{
+    public static void Main(string[] args)
+    {
+        var obj = new peronDetails();
+        obj.Entry();
+    }
+}
+
+
+
+
+
+---------------------------    Genric Collection (With Genric Class)  ----------------------------
+
+using System;
+class personDetails<T>
+{
+    public void skills(T temp)
+    {
+       Console.WriteLine(temp);
+    }
+}
+
+class HR
+{
+    public static void Main()
+    {
+       
+
+
+          personDetails<string> obj1=new personDetails<string>();
+          obj1.skills("database");
+
+          personDetails<int> obj2=new personDetails<int>();
+          obj2.skills(5);
+
+
+
+    }
+}
+
+
+
+----------------------------------  Genric Function()  -------------------------------
+
+
+using System;
+
+
+
+class home
+{
+    public void mother<T>(T temp)
+    {
+        Console.WriteLine(temp);
+    }
+}
+
+class child1
+{
+    public static void Main()
+    {
+         home obj=new home();
+         obj.mother<int>(2);
+         obj.mother<string>("poha");
+    }
+}
+
+
+
+-------------------------------  Genric Function(Passing multiple values) ---------------------
+
+using System;
+
+
+
+class home
+{
+    public void mother<T,P>(T temp, P ctr)
+    {
+        Console.WriteLine(temp+" "+ctr);
+    }
+}
+
+class child1
+{
+    public static void Main()
+    {
+         home obj=new home();
+         obj.mother<int,string>(1,"Pankaj");
+         obj.mother<int,string>(2,"poha");
+    }
+}
+
+
+--------------------------------------  List   --------------------------------
+
+
+using System;
+using System.Collections.Generic;
+
+class personDetails
+{
+    List<string> objList=new List<string>();
+    public void Entry()
+    {
+       objList.Add("deepti");
+       objList.Add("noida");
+
+
+       foreach(var ctr in objList)
+       {
+           Console.WriteLine(ctr);
+       }
+    }
+}
+
+class user
+{
+    public static void Main()
+    {
+       personDetails obj=new personDetails();
+       obj.Entry();
+    }
+}
+
+
+-----------------------------  Link to studt About Collection  ------------------------
+
+
+ 1. https://dotnettutorials.net/lesson/list-collection-csharp/
